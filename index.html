@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA$H PAGES</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            overflow-y: scroll;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #252525;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00FFFF;
+            border-radius: 6px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00e5ff;
+        }
+
+        /* Fluorescent frame */
+        .fluorescent-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            box-shadow: 0 0 20px 20px rgba(0, 255, 255, 0.6);
+        }
+
+        /* Container for sections */
+        .content {
+            padding: 20px;
+        }
+
+        /* Section with fluorescent lines */
+        .section {
+            padding: 50px;
+            margin: 20px 0;
+        }
+
+        .section:not(:last-child)::after {
+            content: '';
+            display: block;
+            height: 5px;
+            background: linear-gradient(90deg, transparent, #00FFFF, transparent);
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #00FFFF;
+            text-align: center;
+            font-size: 4rem;
+        }
+
+        .inner-content {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fluorescent Blue Frame -->
+    <div class="fluorescent-frame"></div>
+
+    <!-- Title Page -->
+    <h1>CA$H PAGES</h1>
+
+    <!-- Scrollable Content -->
+    <div class="content">
+        <!-- Section 1 -->
+        <div class="section">
+            <div class="inner-content">Section 1: Introduction</div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <div class="inner-content">Section 2: Content</div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <div class="inner-content">Section 3: Conclusion</div>
+        </div>
+    </div>
+
+</body>
+</html> 
